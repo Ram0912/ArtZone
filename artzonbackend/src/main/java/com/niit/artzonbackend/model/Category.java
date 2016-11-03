@@ -4,7 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component("c1") // to create a instance of class
 public class Category {
-private String id;
+	
+	private String id;
 private String name;
 private String description;
 public String getId() {
