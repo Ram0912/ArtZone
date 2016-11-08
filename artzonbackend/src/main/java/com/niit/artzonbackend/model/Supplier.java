@@ -1,18 +1,15 @@
 package com.niit.artzonbackend.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 @Entity
 @Table
-@Component("c1") // to create a instance of class
-public class Category {
-	@Id
+@Component("s1") // to create a instance of class
+public class Supplier {
+	
 	private String id;
-	//@Column(name="Name") when table name and feild are different 
 private String name;
 private String description;
 public String getId() {

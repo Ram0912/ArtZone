@@ -28,7 +28,7 @@ public String register(Model model)
 @RequestMapping("/form")
 public String Register(Model model)
 {
-	model.addAttribute("register","Your are Successfully");
+	model.addAttribute("register","Your are Successfully Registered");
 	return "index";
 }
 

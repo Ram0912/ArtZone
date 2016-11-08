@@ -77,56 +77,7 @@ text-align: center;
 text-transform: uppercase;
 width: 50px;
 }
-.facebook-before {
-background-color: #0064ab;
-border-radius: 3px 0px 0px 3px;
--moz-border-radius: 3px 0px 0px 3px;
--webkit-border-radius: 3px 0px 0px 3px;
-color: #f4f4f4;
-display: block;
-float: left;
-height: 50px;
-line-height: 50px;
-text-align: center;
-width: 50px;
-}
-.facebook {
-background-color: #0079ce;
-border: none;
-border-radius: 0px 3px 3px 0px;
--moz-border-radius: 0px 3px 3px 0px;
--webkit-border-radius: 0px 3px 3px 0px;
-color: #f4f4f4;
-cursor: pointer;
-height: 50px;
-text-transform: uppercase;
-width: 250px;
-}
-.twitter-before {
-background-color: #189bcb;
-border-radius: 3px 0px 0px 3px;
--moz-border-radius: 3px 0px 0px 3px;
--webkit-border-radius: 3px 0px 0px 3px;
-color: #f4f4f4;
-display: block;
-float: left;
-height: 50px;
-line-height: 50px;
-text-align: center;
-width: 50px;
-}
-.twitter {
-background-color: #1bb2e9;
-border: none;
-border-radius: 0px 3px 3px 0px;
--moz-border-radius: 0px 3px 3px 0px;
--webkit-border-radius: 0px 3px 3px 0px;
-color: #f4f4f4;
-cursor: pointer;
-height: 50px;
-text-transform: uppercase;
-width: 250px;
-}
+
 </style>
 </head>
 <body>
@@ -134,21 +85,12 @@ width: 250px;
 <h1><strong>Welcome.</strong> Please login.</h1>
 <form action="validate" method="post">
 <fieldset>
-<p><input name="userID" type="text" required value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p>
-<p><input name="password" type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p>
+<p><input name="userID" type="text"  placeholder="Username"required></p>
+<p><input name="password" type="password" placeholder="Password" required ></p>
 <p><a href="#">Forgot Password?</a></p>
 <p><input type="submit" value="Login"></p>
 </fieldset>
 </form>
-<p><span class="btn-round">or</span></p>
-<p>
-<a class="facebook-before"></a>
-<button class="facebook">Login Using Facbook</button>
-</p>
-<p>
-<a class="twitter-before"></a>
-<button class="twitter">Login Using Twitter</button>
-</p>
-</div> <!-- end login -->
+ <!-- end login -->
 </body>
 </html>

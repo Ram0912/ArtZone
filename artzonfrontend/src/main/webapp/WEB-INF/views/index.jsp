@@ -25,6 +25,5 @@ ${register}
 <jsp:include page="register.jsp"></jsp:include>
 </c:if>
 
-
 </body>
 </html>
