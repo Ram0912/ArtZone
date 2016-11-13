@@ -49,4 +49,12 @@ else
 }
 
 }
+
+@RequestMapping("/addtocart")
+public String addtocart(Model model)
+{
+	model.addAttribute("userClickedaddtocart","true");
+	return "add to cart";
+	
+}
 }

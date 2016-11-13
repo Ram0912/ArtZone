@@ -85,7 +85,7 @@ width: 50px;
 <h1><strong>Welcome.</strong> Please login.</h1>
 <form action="validate" method="post">
 <fieldset>
-<p><input name="userID" type="text"  placeholder="Username"required></p>
+<p><input name="userID" type="text"  placeholder="Email address"required></p>
 <p><input name="password" type="password" placeholder="Password" required ></p>
 <p><a href="#">Forgot Password?</a></p>
 <p><input type="submit" value="Login"></p>

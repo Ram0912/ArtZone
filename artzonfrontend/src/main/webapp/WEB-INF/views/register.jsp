@@ -46,7 +46,7 @@ input {
 }
 
 .Registro span {
-	color: hsl(5, 50%, 57%);
+	
 	display: block;
 	height: 48px;
 	line-height: 48px;
@@ -106,6 +106,22 @@ input {
 	padding-left: 36px;
 	width: 204px;
 }
+.Registro input[type="number"] {
+	background-color: #fff;
+	border-top: 2px solid #2c90c6;
+	border-right: 1px solid #000;
+	border-bottom: 2px solid #2c90c6;
+	border-left: 1px solid #000;
+	border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+	color: #363636;
+	margin-bottom: 20px;
+	padding-left: 36px;
+	width: 204px;
+}
 
 
 .Registro input[type="submit"] {
@@ -150,6 +166,7 @@ p:hover {
 <form method="post" action="form">
 
 <span class="fontawesome-user"></span><input type="text" required placeholder="Username" autocomplete="on">
+<span class="fontawesome"></span><input type="number" required placeholder="phone number" autocomplete="on">
 <span class="fontawesome-envelope-alt"></span><input type="email" id="email" required="" placeholder="abcd@domain.com" autocomplete="on">
 <span class="fontawesome-lock"></span><input type="password" name="password" id="password" required placeholder="******" autocomplete="on"> 
 

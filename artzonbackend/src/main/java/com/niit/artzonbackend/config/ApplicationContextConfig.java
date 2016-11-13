@@ -9,9 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.orm.hibernate4.HibernateTransactionManager;
+import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
+import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.niit.artzonbackend.model.Category;
 
 @Configuration
-@ComponentScan("com.niit.shopingcart")
+@ComponentScan("com.artzbackend")
 @EnableTransactionManagement
 public class ApplicationContextConfig {
 
@@ -20,16 +27,14 @@ public class ApplicationContextConfig {
 
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 			
-		dataSource.setUrl("jdbc:h2:tcp://localhost/~/NIITDB");
+		dataSource.setUrl("jdbc:h2:~/test");
 
 		dataSource.setDriverClassName("org.h2.Driver");
 
 		dataSource.setUsername("sa");
-		dataSource.setPassword("sa");
+		dataSource.setPassword("");
 		return dataSource;
 	}
-
-	
 	private Properties getHibernateProperties() {
 		Properties properties = new Properties();
 		
@@ -43,7 +48,7 @@ public class ApplicationContextConfig {
 
 		LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
 		sessionBuilder.addProperties(getHibernateProperties());
-		
+		sessionBuilder.addAnnotatedClass(Category.class);
 			return sessionBuilder.buildSessionFactory();
 	}
 
@@ -51,10 +56,7 @@ public class ApplicationContextConfig {
 	@Bean(name = "transactionManager")
 	public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory) {
 		HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
-
+		
 		return transactionManager;
 	}
-
-	
-
 }

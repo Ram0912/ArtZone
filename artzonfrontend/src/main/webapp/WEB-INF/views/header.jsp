@@ -39,7 +39,7 @@
       <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </c:if>
     <c:if test="${ not empty Success}">
-      <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Add Cart</a></li>
+      <li><a href="addtocart"><span class="glyphicon glyphicon-shopping-cart"></span>Add Cart</a></li>
       <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
     </c:if>
     </ul>

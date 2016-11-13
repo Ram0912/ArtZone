@@ -2,8 +2,10 @@ package com.niit.artzonbackend.dao;
 
 import java.util.List;
 
-import com.niit.artzonbackend.model.Category;
+import org.springframework.stereotype.Component;
 
+import com.niit.artzonbackend.model.Category;
+@Component()
 public interface CategoryDAO {
 
 	//CRUD operations

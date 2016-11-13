@@ -25,5 +25,9 @@ ${register}
 <jsp:include page="register.jsp"></jsp:include>
 </c:if>
 
+<c:if test="${userClickedaddtocart}">
+<jsp:include page="add to cart.jsp"></jsp:include>
+</c:if>
+
 </body>
 </html>

@@ -8,7 +8,7 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 @Entity
 @Table
-@Component("c1") // to create a instance of class
+@Component() // to create a instance of class
 public class Category {
 	@Id
 	private String id;

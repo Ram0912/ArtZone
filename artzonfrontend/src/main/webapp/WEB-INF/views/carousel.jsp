@@ -1,5 +1,6 @@
 <html>
     <style>
+    
 .container {
     margin-top: 20px;
 }
@@ -55,10 +56,7 @@
 	right: 0;
 }
 
-.carousel-control.left span,
-.carousel-control.right span {
-	background-color: #000;
-}
+
 
 .carousel-control.left span:hover,
 .carousel-control.right span:hover {
@@ -81,13 +79,15 @@
 }
 
 .header-text h2 span {
-    background-color: #2980b9;
+    background-color: none;
 	padding: 10px;
+	font-color:black;
 }
 
 .header-text h3 span {
-	background-color: #000;
+	background-color:none;
 	padding: 15px;
+	font-color:black;
 }
 
 .btn-min-block {
@@ -123,67 +123,68 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 			    <div class="item active">
-			    	<img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg" alt="First slide">
+			    	<img src="http://cdn.pcwallart.com/images/assassins-creed-3-wallpaper-3.jpg" alt="First slide">
                     <!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                            	<span>Welcome to <strong>LOREM IPSUM</strong></span>
+                            	<span>Welcome to <strong>ArtZon GameZ</strong></span>
                             </h2>
                             <br>
                             <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            	<span>ArtZon gives you new Experience.</span>
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="login">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="register">Register</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			    <div class="item">
-			    	<img src="http://cdn1.ebags.com/is/image/im8/263808_1_1?resmode=4&op_usm=1,1,1,&qlt=80,1&hei=1500&wid=1500&align=0,1&res=1500" alt="Second slide">
+			    	<img src="http://wallarthd.com/wp-content/uploads/2014/09/Lamborghini-Car-On-The-Need-For-Speed-Game-Cover-Wallpaper-Desktop.jpg" alt="Second slide">
 			    	<!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <span>Welcome to LOREM IPSUM</span>
+                                <span>Welcome to <strong>ArtZon GameZ</strong></span>
                             </h2>
                             <br>
                             <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            	<span>ArtZon gives you new Experience.</span>
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="login">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="register">Register</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			    <div class="item">
-			    	<img src="http://cdn.pcwallart.com/images/smoke-background-wallpaper-4.jpg" alt="Third slide">
+			    	<img src="http://images8.alphacoders.com/416/416577.jpg" alt="Third slide">
 			    	<!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <span>Welcome to LOREM IPSUM</span>
+                              <span>Welcome to <strong>ArtZon GameZ</strong></span>
                             </h2>
                             <br>
                             <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            	<span>ArtZon gives you new Experience.</span>
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="login">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="register">Register</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			</div>
 			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left"></span>
+			<a class="left carousel-control" href="#carousel-example-generic"role="button"  data-slide="prev">
+		    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right"></span>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			</a>
+		
 		</div><!-- /carousel -->
 	</div>
 </div>

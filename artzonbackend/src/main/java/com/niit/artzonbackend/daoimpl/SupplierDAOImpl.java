@@ -2,9 +2,10 @@ package com.niit.artzonbackend.daoimpl;
 
 import java.util.List;
 
-import javax.persistence.Query;
+
 
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.niit.artzonbackend.dao.SupplierDAO;
