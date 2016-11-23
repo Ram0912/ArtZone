@@ -15,11 +15,16 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+  <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+    
       <a class="navbar-brand" href="#">artZon</a>
-    </div>
+    <div class="nav-collapse collpase navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
@@ -44,6 +49,7 @@
     </c:if>
     </ul>
   </div>
-</nav>
+</div>
+</div>
   </body>
 </html>

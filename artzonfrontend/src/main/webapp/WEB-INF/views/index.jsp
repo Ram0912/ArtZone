@@ -17,6 +17,7 @@ ${register}
 <jsp:include page="login.jsp"></jsp:include>
 </c:if>
 
+
 <c:if test="${userClickedlogin}">
 <jsp:include page="login.jsp"></jsp:include>
 </c:if>

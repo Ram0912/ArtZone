@@ -172,7 +172,7 @@
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="login">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="register">Register</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="login" class="glyphicon glyphicon-log-in" >Login</a><a class="btn btn-theme btn-sm btn-min-block" href="register">Register</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
