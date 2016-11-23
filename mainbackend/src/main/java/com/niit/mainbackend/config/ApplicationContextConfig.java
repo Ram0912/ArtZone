@@ -1,13 +1,11 @@
 package com.niit.mainbackend.config;
 
 import java.util.Properties;
-import java.sql.SQLException;
 import java.util.Locale.Category;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.sql.DataSource;
 
-import org.h2.tools.Server;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -39,10 +37,12 @@ public class ApplicationContextConfig {
 	
 	}
 	
-	public Properties getHibernateProperties() {
+	private Properties getHibernateProperties() {
 		Properties properties = new Properties();
+		properties.put("hibernate.show_sql", "true");
 		
 		properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+		properties.put("hibernate.hbm2ddl.auto","update");
 		return properties;
 	}
 

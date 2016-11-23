@@ -45,7 +45,7 @@ public void createCategoryTestcase()
 	
 	Boolean status= categoryDao.create(category);
 	
-	Assert.assertEquals("create category test case", true,status);
+	Assert.assertEquals("create category test case", false,status);
 	
 }
 @Test
@@ -54,7 +54,7 @@ public void deleteCategoryTestcase()
 	category.setId("C001");
 		Boolean status= categoryDao.delete(category);
 	
-	Assert.assertEquals("create category test case", true,status);
+	Assert.assertEquals("create category test case", false,status);
 	
 }
 
