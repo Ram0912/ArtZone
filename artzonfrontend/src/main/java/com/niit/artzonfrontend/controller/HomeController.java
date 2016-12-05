@@ -1,9 +1,18 @@
 package com.niit.artzonfrontend.controller;
 
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.niit.zonbackend.dao.RegisterServiceDAO;
+import com.niit.zonbackend.model.Register;
 
 @Controller
 public class HomeController 
@@ -25,30 +34,7 @@ public String register(Model model)
 	model.addAttribute("userClickedregister","true");
 	return "index";
 }
-@RequestMapping("/form")
-public String Register(Model model)
-{
-	model.addAttribute("register","Your are Successfully Registered");
-	return "index";
-}
 
-@RequestMapping("/validate")
-public String validate(@RequestParam(name="userID")String id, @RequestParam(name="password")String pwd, Model model)
-{
-if (id.equals("ram") &&pwd.equals("ram"))
-{
-	model.addAttribute("Success", "You logged in Successfully");
-	return "index";
-	
-}
-else
-{
-	model.addAttribute("Error", "Invalid User" );
-	return "index";
-	
-}
-
-}
 
 @RequestMapping("/addtocart")
 public String addtocart(Model model)

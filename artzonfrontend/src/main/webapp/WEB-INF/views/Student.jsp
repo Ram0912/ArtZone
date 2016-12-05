@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Students Data</h1>
-<form action="" method="post" commandName="student">
+<form:form action="" method="post" commandName="student">
 <table>
 <tr>
 <td>StudentId</td>
@@ -42,7 +42,7 @@
 </td>
 </tr>
 </table>
-</form>
+</form:form>
 <br>
 <table boarder="1">
 <th>ID</th>

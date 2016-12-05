@@ -163,7 +163,7 @@ p:hover {
 <center>
 <p class="texto">Registration</p>
 <div class="Registro">
-<form method="post" action="form">
+<form method="post" action="register">
 
 <span class="fontawesome-user"></span><input type="text" required placeholder="Username" autocomplete="on">
 <span class="fontawesome"></span><input type="number" required placeholder="phone number" autocomplete="on">
